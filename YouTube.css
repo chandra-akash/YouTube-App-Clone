@@ -103,13 +103,34 @@ navbar {
   border-radius: 50%;
 }
 
+
+.nav_container-two{
+  height: 40px;
+}
+.nav_container-two div{
+  border: 1px solid rgb(44, 43, 43);
+  border-radius: 20px;
+  padding: 5px;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-weight: 500;
+}
+.nav_container-two div:hover{
+  background-color: rgb(112, 112, 112);
+  cursor: pointer;
+}
+.nav_container-two div:nth-child(1){
+  background-color: white;
+  color: #030303;
+}
+
 #allVideos {
   position: relative;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 3rem auto 1rem auto;
+  margin: 6rem auto 1rem auto;
 }
 
 #allVideos > iframe {
@@ -275,14 +296,9 @@ hr{
     justify-content: center;
     position: fixed;
     top: -38px;
-    left: -3%;
+    left: -80%;
     transition: 850ms;
     z-index: 10;
-}
-
-#nav-menu:active{
-  left:-100%;
-  transition: 350ms;
 }
 
 .nav-text{
@@ -340,7 +356,12 @@ hr{
 .fa-bars{
   color: #fff;
 }
-
+.f-s{
+      color: #777474 !important;
+}
+.f-s:hover{
+      color: #f1f1f1 !important;
+}
 .nav-section{
   height:200px;
   display: flex;

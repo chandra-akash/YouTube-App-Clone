@@ -29,7 +29,7 @@
         <div class="inputDiv">
           <input type="text" id="searchBox" placeholder="Search" />
           <button onclick="getVideos()">
-            <span> <i class="fas fa-search" style="color: #777474;"></i></span>
+            <span> <i class="fas fa-search f-s" style="color: #777474;"></i></span>
           </button>
           <span><i class="fas fa-microphone"></i></span>
         </div>
@@ -40,17 +40,32 @@
           <img src="./DP.jpg" alt="" />
         </div>
       </div>
+      <hr>
+      <div class="nav_container nav_container-two">
+        <div class="nav_div">All</div>
+        <div class="nav_div">Live</div>
+        <div class="nav_div">Music</div>
+        <div class="nav_div">Javascript</div>
+        <div class="nav_div">Computer Science</div>
+        <div class="nav_div">Computers</div>
+        <div class="nav_div">Bollywood music</div>
+        <div class="nav_div">Imagine dragons</div>
+        <div class="nav_div">Code with Harry</div>
+        <div class="nav_div">Cyber Security</div>
+      </div>
     </navbar>
+
+
 
     <nav id="nav-menu">
       <ul class="nav-menu-items">
         <div id="navbar-toggle">
-          <a href="#" class="menu_bars" id="hide-menu">
-            <i class="fas fa-bars nav-icon"></i>
+          <a href="#" class="menu_bars">
+            <i class="fas fa-bars nav-icon" id="hide-menu"></i>
           </a>
-          <a href="#">
+          <span onclick="window.location.reload()">
             <h1><i class="fab fa-youtube" id="youtube-logo"></i>YouTube</h1>
-          </a>
+          </span>
         </div>
         <hr>
         <div class="nav-section">
@@ -70,49 +85,7 @@
 
 
     <div id="allVideos">
-      <!-- <div id="mostPopular">
-        <div class="popularCard">
-          <img src="https://i.ytimg.com/vi/bGKaBH29pUI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAopn81nRetXHHWBNMnUxRGJguyhg" alt="">
-          <div class="popularCardContent">
-            <h3 class="popularCardTitle">Session 2 - Programming Techniques | Learn DSA</h3>
-            <p class="popularChannelName">Learn DSA</p>
-          </div>
-        </div>
-      </div> -->
 
-      <!-- <div class="videoCard">
-        <img
-          src="https://i.ytimg.com/an_webp/BrNot_J60Do/mqdefault_6s.webp?du=3000&sqp=CPKYm4gG&rs=AOn4CLBc77WBLGB0UgqbTVkNqVCsXA-enQ"
-          alt=""
-          class="videoCardImage"
-        />
-        <div class="videoContent">
-          <h2 class="videoTitle">Experiencing Plaid</h2>
-          <h4 class="videoChannel">
-            Tesla <i class="fas fa-check-circle"></i>
-          </h4>
-          <p class="videoDesc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur, eum.
-          </p>
-        </div>
-      </div> -->
-
-      <!-- <div id="noResult">
-        <img src="./no-result.svg" alt="no video found" class="noVideoImage" />
-        <h2 class="noResultHeading">No results found</h2>
-        <h4 class="noResultDesc">Try different keywords or remove search filters</h4>
-      </div> -->
-
-      <!-- <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/BrNot_J60Do"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe> -->
     </div>
   </body>
 

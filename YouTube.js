@@ -2,7 +2,7 @@ let API_KEY = `AIzaSyAobcNUl6nG84nu0irjdJDai03Xjo_XExo&maxResults=10`;
 
 let getData = async ( query ) =>
 {
-    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${ query }&key=${ API_KEY }`;
+    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${ query }&key=${ API_KEY }&maxResults=50`;
 
     let res = await fetch( url );
     let data = await res.json();
@@ -160,7 +160,9 @@ let displayMostPopular = ( videos ) =>
 
 let loadVideoByCountry = async () =>
 {
-    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&location=20.5937%2C78.9629&locationRadius=10mi&type=video&key=${ API_KEY }`;
+    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&location=20.5937%2C78.9629&locationRadius=10mi&type=video&key=${ API_KEY }&maxResults=50`;
+    // let url = `https://youtube.googleapis.com/youtube/v3/search?location=21.5922529%2C-158.1147114&locationRadius=10mi&maxResults=50&q=surfing&type=video&key=${ API_KEY }&maxResults=50`;
+    // let url = `https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&location=21.5922529%2C-158.1147114&locationRadius=10mi&q=surfing&type=video&key=${ API_KEY }&maxResults=50`;
 
     let data = await fetch( url );
     let videoData = await data.json();
@@ -176,14 +178,15 @@ let loadVideoByCountry = async () =>
 
 const openMenu = document.querySelector( '#show-menu' )
 const hideMenuIcon = document.querySelector( '#hide-menu' )
-const sideMenu = document.querySelector( '#nav-menu' )
+const sideMenu = document.getElementById( 'nav-menu' )
 
 openMenu.addEventListener( 'click', function ()
 {
-    sideMenu.classList.add( '#nav-menu:active' )
+    sideMenu.style.left = '-3%'
 } )
 
 hideMenuIcon.addEventListener( 'click', function ()
 {
-    sideMenu.classList.remove( 'active' )
+    sideMenu.style.left = '-80%'
+    sideMenu.style.transition = '850ms'
 } )

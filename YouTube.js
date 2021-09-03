@@ -1,4 +1,5 @@
-let API_KEY = `AIzaSyAobcNUl6nG84nu0irjdJDai03Xjo_XExo&maxResults=10`;
+// let API_KEY = `AIzaSyAobcNUl6nG84nu0irjdJDai03Xjo_XExo&maxResults=10`;
+let API_KEY = `AIzaSyDWyHjpGqqk3xfl2RvRkP_8KhC8Sr7mxGE`;
 
 let getData = async ( query ) =>
 {

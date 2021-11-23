@@ -1,8 +1,9 @@
 # YouTube-App-Clone
 YouTube Website Clone
-<hr />
 
 This is the result of the first attempt to create a YouTube clone by HTML, CSS, JS, using the YouTube-API.
+
+<hr />
 
 Home Page:
 
